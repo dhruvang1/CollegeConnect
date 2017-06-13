@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_conversation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="iitd.collegeconnect.Conversation">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:divider="#BBBBBB"
+        android:dividerHeight="2.0dp"
+        android:id="@+id/conversation_list" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conversation_optionsbtn"
+            android:onClick="conversation_onclickoptions"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conversation_profilebtn"
+            android:onClick="conversation_onclickprofile"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conversation_feedbtn"
+            android:onClick="conversation_onclickfeed"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conversation_chatbtn"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

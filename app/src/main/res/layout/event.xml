@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:hint="Event Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/event_title" />
+
+    <TextView
+        android:id="@+id/placetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_title"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Event Location:"/>
+
+    <TextView
+        android:id="@+id/event_place"
+        android:hint="Place"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_title"
+        android:layout_toEndOf="@+id/placetxt"
+        android:layout_toRightOf="@+id/placetxt"/>
+
+    <TextView
+        android:id="@+id/timetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_place"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Time:"/>
+
+    <TextView
+        android:id="@+id/event_time"
+        android:hint="Time"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_place"
+        android:layout_toEndOf="@+id/timetxt"
+        android:layout_toRightOf="@+id/timetxt"/>
+
+    <Button
+        android:id="@+id/event_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_place"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="More"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:id="@+id/event_image"
+        android:visibility="gone"
+        android:layout_below="@+id/event_time"/>
+
+    <TextView
+        android:id = "@+id/event_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/event_image"/>
+
+</RelativeLayout>
